@@ -5,7 +5,9 @@ https://store.vsplate.com/
 ## List
 
 * wordpress
+  - https://registry.hub.docker.com/v1/repositories/wordpress/tags
 * thinkphp
+  - https://api.github.com/repos/top-think/framework/releases?page=1
 * discuz
 * drupal
 * joomla
