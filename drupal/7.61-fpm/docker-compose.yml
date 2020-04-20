@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+  web:
+    image: drupal:7.61-fpm
+    depends_on:
+      - db
+    ports:
+      - "80:80"
