@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.8-jre10-slim
+    ports:
+      - "8080:8080"

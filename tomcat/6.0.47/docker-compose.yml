@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:6.0.47
+    ports:
+      - "8080:8080"

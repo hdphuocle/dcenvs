@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.17-jre8-alpine
+    ports:
+      - "8080:8080"

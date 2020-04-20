@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.34-jdk8-openjdk-slim
+    ports:
+      - "8080:8080"

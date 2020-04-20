@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.33-jdk14-openjdk-oracle
+    ports:
+      - "8080:8080"

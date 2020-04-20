@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.31-jdk11-adoptopenjdk-openj9
+    ports:
+      - "8080:8080"

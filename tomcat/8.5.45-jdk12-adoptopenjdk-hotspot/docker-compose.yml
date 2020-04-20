@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:8.5.45-jdk12-adoptopenjdk-hotspot
+    ports:
+      - "8080:8080"

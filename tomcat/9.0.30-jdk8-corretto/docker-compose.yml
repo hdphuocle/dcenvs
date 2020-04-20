@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: tomcat:9.0.30-jdk8-corretto
+    ports:
+      - "8080:8080"
