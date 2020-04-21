@@ -21,8 +21,4 @@ https://store.vsplate.com/
 * oxideshop
 * magento
 * tomcat
-* struts
-* ubuntu
-* centos
-* debian
-* php
+  - https://registry.hub.docker.com/v1/repositories/tomcat/tags
