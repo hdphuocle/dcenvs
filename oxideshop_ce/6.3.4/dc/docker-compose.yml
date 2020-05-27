@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    command: --sql_mode="NO_ENGINE_SUBSTITUTION"
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: oxid
+      MYSQL_USER: oxid
+      MYSQL_PASSWORD: oxid
+  web:
+    image: vsplate/oxideshop_ce:6.3.4
+    command: bash -c 'chmod +x /wait-for-it.sh && /wait-for-it.sh db:3306 -- apache2-foreground'
+    volumes:
+      - ./wait-for-it.sh:/wait-for-it.sh
+      - ./index.php:/var/www/html/index.php
+    depends_on:
+      - db
+    ports:
+      - "80:80"
